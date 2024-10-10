@@ -254,4 +254,4 @@
 
 # Reference
 - [AWS Certified Solutions Architect-Associate Exam Guide](./1-AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)
-- [AWS Certified Solutions Architect-Associate Ramp Up Guide](./2-AWS-Ramp-Up-Guide-Solutions-Architect.pdf)
+- [AWS Ramp Up Guide Solutions Architect](./2-AWS-Ramp-Up-Guide-Solutions-Architect.pdf)
