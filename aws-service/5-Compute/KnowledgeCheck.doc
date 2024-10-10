@@ -1,0 +1,282 @@
+The following steps are used to change the instance type of an EBS-backed instance when the new instance type is compatible with the original instance type. Which is the correct order of the steps? 
+1- Install new drivers; 2 - Stop the instance; 3 - Select the new instance type; 4 - Start the instance from the Amazon EC2 console. 
+1- Stop the instance; 2 - Select the new instance type; 3 - Install new drivers; 4 - Start the instance from the Amazon EC2 console. 
+1- Stop the instance; 2 - Select the new instance type; 3 - Start the instance from the Amazon EC2 console; 4 - Install new drivers. 
+1- Select the new instance type; 2 - Install new drivers; 3 - Stop the instance; 4 - Start the instance from the Amazon EC2 console. 
+Incorrect
+1. If the new instance type requires drivers that are not installed on the existing instance, you must connect to 
+your instance and install drivers first (for example, when moving to an instance based on the AWS Nitro System).
+2. Stop the instance from the Amazon EC2 console.
+3. With the instance still selected, choose Actions, Instance settings, Change instance type, and select the new instance type. If the instance type you selected supports EBS optimization, select EBS optimized to enable EBS optimization.
+4. Start the instance from the Amazon EC2 console.
+What are the considerations for determining where to place your data? (Select THREE.)
+Compliance
+Currency types
+Service availability
+Hardware offerings
+Proximity to users
+Administrative proximity to the data center
+
+1. Compliance with data governance and legal requirements: Depending on your company and location, you might need to run your data out of specific areas. 
+2. Proximity: Selecting a Region that is close to the majority of your customers will reduce latency and allow faster content delivery. 
+3. Available services within a Region: Sometimes the closest Region might not have all the features that you want to offer to customers. AWS is frequently innovating by creating new services and expanding on features within existing services. 
+A security group is a firewall that sits on which component?
+VPC
+Network
+Instance
+Availability Zone
+Elastic network interface
+
+Security groups
+ are another security feature of AWS. Unlike network ACLs that are attached to the subnet, security groups are attached to the elastic network interface of the AWS resources within the subnet. That means the security groups would be at the boundary of the Amazon EC2 instance instead of at the subnet boundary like a network access control list (network ACL).
+Your organization is large and has many location-based IT departments. You do not want to share Secure Shell (SSH) key pairs with the various locations. 
+Which connection option/s could you use?
+Connect by SSH
+Amazon EC2 Instance Connect
+AWS Systems Manager Session Manager
+Remote Desktop Protocol
+Both AWS Systems Manager and EC2 Instance Connect provides a secure way to connect to your Linux instances without requiring key pairs. You use AWS Identity and Access Management (IAM) policies and principals to control SSH access to your instances.EC2 Instance Connect provides a secure way to connect to your Linux instances using SSH and removes the need to share and manage SSH key pairs.
+Your security department has rejected your requests to allow administrative traffic from your network to the AWS Cloud on port 22. 
+Which option will allow you to administer your Amazon EC2 instances?
+Connect by Secure Shell (SSH)
+Amazon EC2 Instance Connect
+AWS Systems Manager Session Manager
+Connect by PuTTY
+EC2 Instance Connect provides a secure way to connect to your Linux instances using SSH. You use AWS Identity and Access Management (IAM) policies and principals to control SSH access to your instances. EC2 Instance Connect removes the need to share and manage SSH key pairs.
+With AWS Systems Manager Session Manager, you can manage your Amazon EC2 instances through a browser-based shell or through the AWS CLI. 
+Session Manager removes the need to open inbound ports, manage SSH keys, or use bastion hosts.
+
+Which of the Amazon EC2 instance status checks require manual administrator intervention to resolve the issue?
+System status checks
+Instance status checks
+Neither require manual intervention.
+Both checks require manual intervention.
+
+Instance status checks monitor the software and network configuration of your individual instance. Amazon EC2 checks the health of the instance by sending an Address Resolution Protocol (ARP) request to the network interface (NIC). These checks detect problems that require your involvement to repair.
+System status checks monitor the AWS systems on which your instance runs. These checks detect underlying problems with your instance that require AWS involvement to repair. When a system status check fails, you can choose to wait for AWS to fix the issue, or you can resolve it yourself.
+Which Amazon EC2 metrics can you view in the instance dashboard on the Amazon EC2 console? (Select THREE.)
+CPU utilization
+RAM
+Disk I/O
+Network utilization
+Memory used
+Instance process ID
+You can monitor CPU utilization, disk I/O, and network utilization for your EC2 instances. When performance falls outside of your established baseline, you might need to reconfigure or optimize the instance to reduce CPU utilization, improve disk I/O, or reduce network traffic.
+What gathered data does AWS Trusted Advisor provide its recommendations from? (Select TWO.)
+AWS best practices
+Information gathered in user forums
+AWS operational experience
+Data collected in customer surveys
+AWS tool feedback questionnaires
+
+AWS Trusted Advisor is an application that draws upon best practices learned from the AWS aggregated operational history of serving hundreds of thousands of AWS customers.
+Which option can you perform by using AWS CLI to create a trail?
+Create an all-Regions trail.
+Create a single-Region trail.
+Create both a single-Region and all-Regions trail.
+You cannot create a trail from the AWS CLI.
+
+You can only create a single-Region trail by using the AWS CLI.
+What happens to your existing all-Regions trail if you add a new Region to your environment?
+A new single Region trail must be created.
+The new Region must be manually added to the existing trail.
+The new Region is automatically added to the trail.
+You must delete and recreate the all-Regions trail.
+
+If a Region is added after you create a trail that applies to all Regions, that new Region is automatically included, and events in that Region are logged. Creating a trail in all Regions is a recommended best practice, so that you capture activity in all Regions in your account. Because of this, an all-Regions trail is the default option when you create a trail in the CloudTrail console. 
+What is required to connect to the Amazon EC2 serial console using a remote SSH client?
+It's a one-step process. 
+Just change the SSH target to the syntax of  
+INSTANCE_ID.port0@serial-console.ec2-instance-connect.us-east-1.aws
+1 - Get the public key from the private key. 
+2 - Push the SSH public key to the instance using the AWS CLI. 
+3 - Use the private key  with the SSH client to connect using the syntax of  INSTANCE_ID.port0@serial-console.ec2-instance-connect.us-east-1.aws
+1 - Get the public key from the private key. 
+2 - Push the SSH private key to the instance using the AWS CLI. 
+3 - Use the public key with the SSH client to connect using the syntax of  INSTANCE_ID.port0@serial-console.ec2-instance-connect.us-east-1.aws
+You cannot use an SSH client to connect to the EC2 serial console. The browser-based EC2 serial console is the only way to make a serial connection to the EC2 instance.
+Why does prebaking an Amazon Machine Image (AMI) make the instance more rapidly available for users?
+The applications, patches, tools, and configurations are installed after the instance launches.
+The AMI is acquired from AWS Marketplace and configured for one type of workload.
+The applications, patches, tools, and configurations are installed when building the AMI.
+A prebaked AMI is given launch priority, so it provisions faster.
+When provisioning a bootstrapped instance, when does the user data script run?
+Immediately before launching the instance
+After launching the instance and before initiating the operating system
+After the instance is launched and the operating system is running
+After the instance is launched and the user data script is manually run
+Which AWS service provides secure configuration data for launch templates?
+AWS Config
+AWS Secrets Manager
+Parameter Store, a capability of AWS Systems Manager 
+Automation, a capability of AWS Systems Manager 
+Which statements correctly describe working with launch template versions? (Select THREE.)
+By default, the newest template is the default template.
+One or more numbered launch template versions can be created.
+Each version can have different parameters.
+If no default version is specified, the first version of the launch template is used.
+The launch template version number is chosen when it is created.
+When launching an instance, only the newest launch template version can be used.
+
+ You can set any version of the launch template as the default version-by default, it's the first version of the launch template.
+For each launch template, one or more numbered launch template versions can be created. Each version can have different launch parameters.When launching an instance from a launch template, any version of the launch template can be used. If a version is not specified, the default version is used. 
+What is an AWS CloudFormation change set?
+An option to preview how a proposed change to a stack might impact AWS resources before making the change
+A set of changes that are part of other changes
+An option to extend the capability of stacks across multiple AWS accounts and AWS Regions with a single operation
+A way to manage extensions, both public and private, such as resources, modules, and hooks that are available for use in an AWS account
+
+An administrator wants to update the instance type of an Amazon EC2 instance in a risk-averse AWS CloudFormation stack. He wants to know which kind of disruption, if any, might affect the EC2 instance.
+Which choice determines the possibility of disruption?
+They should submit a change set and review the results.
+They should review the AWS Resource and Property Types Reference in the AWS CloudFormation User Guide.
+The should test his change set in a non-production environment and observe the impact after it runs.
+They should ask his AWS technical account manager.
+What is an AWS Service Catalog product?
+A collection of AWS resources
+An option to preview how a proposed change to a stack might impact AWS resources before making the change
+An information technology (IT) service that you want to make available for deployment on AWS
+A means to control the ways specific AWS resources can be deployed
+If the preconfigured metadata types collected don't meet your business needs, you can create a custom inventory.
+What is the file format for the custom inventory files?
+XML
+YAML
+INI
+JSON
+You have been asked to configure your environment so that CPU and memory utilization metrics are available at the task level for tasks running on EC2 instances. What step(s) should you perform to accomplish this?
+Install the CloudWatch agent on your EC2 instances
+Enable CloudWatch Container Insights for your Amazon ECS cluster
+Both A and B
+No action is required; task level metrics are available by default for tasks running on EC2 instances.
+
+The correct answer is B. The Amazon ECS agent on the container instance will send performance data at the task level to CloudWatch if Container Insights is enabled.
+Your team is troubleshooting tasks running on EC2 instances. They are looking for more detailed information about CPU performance not just utilization and reservation data. You have been asked to configure your environment so that detailed resource utilization metrics are available for your EC2 instances. What step(s) should you perform to accomplish this?
+Install the CloudWatch agent on your EC2 instances
+Enable CloudWatch Container Insights for your Amazon ECS cluster
+Both A and B
+Configure the task definition for the problem tasks to report detailed performance metrics to the Amazon ECS agent
+
+The correct answer is A. Installing the CloudWatch agent will allow you to dive deeper into resource utilization on your instances. Enabling Container Insights is not required for this scenario.
+What form of Kubernetes does Amazon Elastic Kubernetes Service (Amazon EKS) support?
+A proprietary AWS version of Kubernetes
+A Kubernetes fork
+Native, upstream Kubernetes
+Any available Kubernetes distribution
+How do you change the AWS Region a cluster is created in by using eksctl? (Select TWO.)
+Edit the cluster properties after it is created.
+Use the --region flag when running the command.
+Use a customized cluster.yaml file.
+Add a tag to the Region you want the cluster created in.
+Add a Kubernetes label specifying the Region using kubectl.
+
+Correct answer: Use the --region flag when running the command., Use a customized cluster.yaml file.
+Your answer: Add a Kubernetes label specifying the Region using kubectl.
+You can customize the behavior of eksctl by using the --region flag as you run the command or by creating a cluster.yaml file with specific attributes.
+Which service can be accessed from outside the cluster?
+ClusterIP
+NodePort
+LoadBalancer
+Both NodePort and LoadBalancer
+
+Correct answer: Both NodePort and LoadBalancer
+Your answer: ClusterIP
+The NodePort service opens a port on each node, allowing access from outside the cluster. The LoadBalancer service extends the NodePort service by adding a load balancer in front of all nodes.
+What is the Amazon VPC Container Network Interface (CNI) plugin?
+A logical networking component in a VPC that represents a virtual network card
+A method for connecting instances in a private subnet to the internet
+A Kubernetes object that exposes an application running on a set of pods
+A plugin that allows Kubernetes pods to have the same IP address inside the pod as they do on the VPC network
+
+Correct answer: A plugin that allows Kubernetes pods to have the same IP address inside the pod as they do on the VPC network
+Your answer: A logical networking component in a VPC that represents a virtual network card
+Amazon EKS integrates VPC networking into Kubernetes using the CNI plugin for Kubernetes. The CNI plugin allows Kubernetes pods to have the same IP address inside the pods as they do on the VPC network.
+What benefits does a service mesh provide? (Select THREE.)
+Connects microservices
+Secures network traffic between microservices using encryption and authentication controls
+Controls network flow both internally and externally of the microservices infrastructure
+Provides end-to-end visibility in application performance
+Which of the following is an Amazon EKS default add-on? (SELECT TWO)
+Kubernetes API server
+Amazon VPC Container Network Interface (CNI)
+kubelet
+kube-proxy
+When will Amazon Elastic Kubernetes Service (Amazon EKS) manage add-on updates? (Select TWO.)
+When the add-on was installed using the AWS Management Console
+When the add-on was installed using kubectl
+When the add-on was installed using eksctl without a configuration file
+When the add-on was installed using eksctl with a configuration file
+
+Correct answer: When the add-on was installed using the AWS Management Console, When the add-on was installed using eksctl with a configuration file
+Your answer: When the add-on was installed using eksctl with a configuration file
+Amazon EKS only manages add-on updates that were installed using the AWS Management Console or using eksctl with a configuration file.
+What is the recommended method to update self-managed Amazon Elastic Kubernetes Service (Amazon EKS) cluster nodes to a new version of Kubernetes?
+Replace the nodes with the new AMI and migrate your pods to the new group.
+Amazon EKS automatically updates your cluster nodes when you update the control plane.
+Deploy Update pods as a DaemonSet to each node.
+Update the AWS CloudFormation stack for the node group to use the new AMI.
+Which tools are used to upgrade a managed node group? (Select TWO.)
+AWS Management Console
+kubectl
+AWS CLI
+Eksctl
+When are on-demand cluster nodes a good choice for workloads?
+When workloads have spikes in demand that are stateful or do not tolerate interruption well
+In stateless or other fault-tolerant workloads
+In steady-state workloads such as databases
+Which of the following are scenarios where you might select Amazon Kinesis Data Firehose for data processing? (Select THREE.)
+You want to ingest a very high volume of data and store it to Amazon Redshift.
+You want to ingest a very high volume of data in a single stream that must be processed by three consumer applications.
+You want to ingest a very high volume of data, transform its format, and store it to an Amazon Aurora database.
+You must respond to individual messages as they are received.
+You want to ingest a very high volume of data, transform its format, and store it to Amazon S3.
+You want to simplify retry handling on streaming data, and the order of records in the stream is not critical.
+Kinesis Data Firehose is ideal for ingesting data for storage. It can also transform data using an AWS Lambda function before storing it.
+Kinesis Data Firehose streams can only be associated with a single consumer, and the target must be Amazon S3, Amazon Redshift, Amazon OpenSearch Service, or Splunk.
+Messaging services like Amazon Simple Queue Service (Amazon SQS) or Amazon Simple Notification Service (Amazon SNS) would be better suited for processing and responding to individual messages than processing a stream of data.
+Kinesis Data Firehose has built-in retries. Amazon Kinesis Data Streams does not, but order is not guaranteed with Kinesis Data Firehose.
+You are setting up an Amazon Simple Queue Service (Amazon SQS) queue as an event source to an AWS Lambda function that takes an average of 3 minutes to process each message. What are the most appropriate configuration options as a starting point? (Select THREE.)
+Set the batch size to 4 or lower.
+Set the batch size to 5 or higher.
+Set the visibility timeout on the queue to 6x the batch size
+Set the visibility timeout on the queue to 6x the function timeout.
+Configure a dead-letter queue.
+Configure the IteratorAge threshold.
+
+Your batch size must allow all the messages in a batch to process within the Lambda timeout. That means (batch size * 3 minutes) < 15 minutes.
+It is a best practice to set the visibility timeout on your SQS queue to 6x the Lambda function timeout to allow for retries if the function is getting throttled.
+It is also a best practice to configure a dead-letter queue.
+The IteratorAge metric is helpful for monitoring streaming data, but is not relevant for queues.
+Which of these statements about AWS Step Functions States Language are true? (Select THREE.)t.
+Task and Parallel states can have a field named Retry. An individual retrier represents a certain number of retries.
+Choice states can have a field named Catch. When a state reports an error that can't be resolved by retriers, Step Functions scans through the catchers to find the error name in the ErrorEquals field.
+You can't use a Retry or Catch field to handle timeouts.
+The Amazon States Language defines a set of built-in strings that name well-known errors, all beginning with the States. prefix.
+The reserved name States.ALL is a wildcard that matches any error name.
+Choice states can have a field named Retry. An individual retrier represents a certain number of retries.
+All of these items are true with the exception of Choice states being able to use the Catch field, You can use Retry or Catch fields to handle timeouts, and Choice states can not have a field named Catch. Task and Parallel states can have a Catch field.
+Which of the following are true about Amazon Simple Queue Service (Amazon SQS) and AWS Lambda? (Select TWO.)
+A best practice is to set the visibility timeout to 3 times the timeout you configure for your Lambda function.
+If a Lambda function returns errors when processing messages, Lambda decreases the number of processes polling the queue.
+Lambda has a default of five parallel processes to get things off of a queue.
+If there is an increase in queue size, Lambda decreases the concurrency required to reduce cost.
+Correctly unchecked
+If the visibility timeout expires before the Lambda function processes the messages, messages will be deleted by the queue.
+If a Lambda function returns errors when processing messages, Lambda decreases the number of processes polling the queue. In addition, Lambda has a default of five parallel processes to get things off of a queue.
+A best practice is to set your visibility timeout to 6 times the function timeout, not 3 times. If the Lambda service detects an increase in queue size, it will automatically increase how many batches it gets from the queue, each time. That means it will increase the number of concurrent Lambda functions it invokes. Lastly, if the visibility timeout expires before the Lambda function has processed the messages in a batch, any message in that batch that hasn't been deleted by your function will become visible again.
+To learn more about failure management with Lambda and Amazon SQS, review the Failure Management in Event-Driven Architectures lesson.
+Which of these patterns for communicating status updates do you use to get status information on a long-running transaction?
+WebSockets with AWS AppSync
+Client polling pattern
+Saga pattern with AWS Step Functions
+Webhooks with Amazon Simple Notification Service (Amazon SNS)
+
+Client polling is a common way to get status information on a long-running transaction. With the client polling, the client can use the ID returned from Amazon Simple Queue Service (Amazon SQS) to get the status of the request. 
+Which of the following are attributes of using streaming services for serverless data processing? (Select TWO.)
+With streaming services, data is deleted when it has been consumed.
+The data on the stream remains in the stream for a designated period of time and then is gone, regardless of consumer behavior.
+Each stream consumer needs to maintain a pointer to a particular position in the stream. After consuming the message, the consumer moves the pointer forward to the next record and processes it.
+With streaming services, you can configure retries up to a certain number of attempts, and dead-letter queues are built in to the service.
+With streaming services, the core entity is an individual message.
+The choice between streaming and messaging for serverless data processing depends on the nature of the data you are collecting and the type and timing of processing you need to do.
+
+

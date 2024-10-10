@@ -1,0 +1,212 @@
+Which power supplies must you provide to run an AWS Snowcone device?
+USB-C power supply with a minimum of 45 watts
+SFP28 optics and cables
+180 watt, 20 volt laptop power supply with 4.5 mm connector
+SFP optics and cables
+A Snowcone device does not include a power supply or external battery because it ships with the smallest possible form factor. You must provide all power supplies or batteries. You can run your Snowcone device by using either a plugin power source or an external battery. The device requires a minimum of 45 watts of power supplied through a USB-C adapter or an external battery.
+What are the primary differences between an import to Amazon S3 job type and a local compute and storage only job type? (Select TWO.)
+AWS DataSync can be used with only a local compute and storage only job type.
+The number of vCPUs and the amount of memory are different.
+Amazon EC2 instances are available only with a local compute and storage only job type.
+Whether your NFS data is imported into your Amazon S3 when the device is returned.
+The 8 TB HDD or 14 TB SSD storage space is formatted differently.
+The same AWS Snowcone device is used for all job types. The device specifications and compute capabilities are the same. The 8 TB or 14 TB of available storage is formatted as NFS file storage with an import to Amazon S3 job type. The available storage is formatted for use as block storage to attach to Amazon EC2 instances for local compute and storage jobs. With an import to Amazon S3 job type, your NFS storage is imported into your Amazon S3 bucket when the device is returned to AWS. 
+
+Which networking component is used to assign IP addresses to EC2 instances when you launch them on the AWS Snowcone?
+IP subnet
+Virtual Local Area Network (VLAN)
+VXLAN network identifier (VNI) 
+IP address assignment of physical port
+VXLAN network identifiers (VNIs) are used to attach a public IP address when you launch an EC2 compute instance on your Snowcone. You can create your VNIs in advance or create a new VNI when you launch an instance.
+
+What component is necessary to create your Amazon EC2 Amazon Machine Image (AMI) that you will use on an AWS Snowcone device?
+Any Linux operating system image available for selection from the EC2 console.
+Any Microsoft Windows operating system image available for selection from the EC2 console.
+A supported base Linux operating system image from the AWS Marketplace.
+Any Amazon Linux 2 AMI available for selection from the AWS Marketplace.
+You must create Amazon EC2 AMIs using one of three available base Linux operating system (OS) images available from the AWS Marketplace. You must use these images to create your EC2 instances, which are the only supported images for use on a Snowcone device.
+
+Which Amazon EC2 instance type is recommended to create your Amazon Machine Images (AMIs)?
+t2
+snc1
+m5n
+c5
+When developing your Amazon EC2 instance, select an Amazon EC2 t2 instance type. The t2.micro, t2.small, and t2.medium instance types are similar to the resources as the snc1 instance types. You will use these instance types to launch your AMI on the AWS Snowcone device.
+What are the general use and shipping limitations for an AWS Snowcone device? (Select THREE.)
+You can ship from any AWS Region to any other neighboring country.
+You can use an AWS Snowcone device only in the country it was shipped to.
+A designated carrier is specified for the AWS Region or country.
+Only physical street addresses are valid shipping addresses.
+The specified shipping speed of 1-day and 2-day shipping is the same for all AWS Regions.
+AWS prepares all documents and tax paperwork when required.
+A designated carrier is specified for each AWS Region that is used to deliver and return the AWS Snowcone device.
+AWS ships only to physical street addresses. Post office boxes are not valid shipping addresses.
+You can use your AWS Snowcone device only within the country specified as part of the shipping address.
+AWS ships only to a valid address covered by the specified AWS Region. In the United States (US), you can ship to any US address. In Europe, you can ship to any other United Kingdom (UK) or European Union (EU) country. You cannot ship to a neighboring country from any AWS Region.
+If documentation or tax paperwork is required, you are responsible for completing it and providing it to AWS.
+The specified shipping time varies by AWS Region. In the US, the available shipping speeds are 1-day and 2-day. In the EU, shipping speeds are Express and Standard.
+
+What is the difference between an offline and an online data transfer?
+Offline data transfers are used to copy inactive data only.Online data transfers are used to copy inactive and active data.
+Offline data transfers are one-way from on-premises storage systems to an AWS Snowcone device.Online data transfers are two-way between an AWS Snowcone and on-premises storage systems.
+Offline data transfers are used to copy inactive and active data.Online data transfers are used to copy inactive only.
+Offline data transfers are two-way between an AWS Snowcone and on-premises storage systems.Online data transfers are one-way from on-premises storage systems to an AWS Snowcone device.
+Offline data transfers refer to copying inactive or unchanging data. You can do the following:
+Copy from on-premises storage systems to an AWS Snowcone
+Copy from an AWS Snowcone to a different on-premises storage location
+Import your NFS data into the Amazon S3 buckets in the AWS Cloud
+Online data transfers refer to using AWS DataSync to transfer inactive and active data to the AWS Cloud. Use AWS DataSync to transfer between NFS storage on an AWS Snowcone or an on-premises NFS storage system and AWS storage services in the AWS Cloud.
+
+What operation is performed to complete the return process and prepare the AWS Snowcone for the next use?
+Trusted Platform Module (TPM) replacement
+Secure software erasure
+Hard disk drive (HDD) and solid state disk (SSD) formatting
+Embedded encryption key replacement
+After the data transfer job has been processed and verified, AWS performs a software erasure of the Snowcone device. AWS follows the National Institute of Standards and Technology (NIST) guidelines for media sanitization.
+
+Which networking ports are included on an AWS Snowcone device?
+(2) 10/25 Gbps SFP28 Ethernet port
+(1) 1/10 Gbps RJ45 Ethernet port, (1) 10/25 Gbps SFP28 Ethernet port
+(2) 1/10 Gbps RJ45 Ethernet ports
+(1) 100 Mbps RJ45 Ethernet port, (1) 1/10 Gbps RJ45 Ethernet port
+Each AWS Snowcone has two  1/10 Gbps RJ45 Ethernet ports. The minimum connection speed using RJ45 ports is 1000 Mbps (1 Gbps). 10/100 Mbps switches are not supported.
+
+Which edge computing challenges are solved using an AWS Snowcone device? (Select THREE.)
+Operating environments with space constraints
+Inconsistent or nonexistent internet connectivity
+Use cases with significant compute processing requirements
+Constantly changing applications and variable resource requirements
+Operating temperatures outside of normal ranges for data centers
+Transporting petabytes of data to the AWS Cloud quickly
+AWS Snowcone devices are designed to be able to work off line in places where internet connectivity is intermittent or nonexistent.
+An AWS Snowcone device can operate in a wide range of temperatures from freezing cold to desert-like conditions.
+An AWS Snowcone device has a small form factor that allows it to fit in locations where other data center equipment cannot easily fit. 
+
+What security feature is required to access your AWS Snowcone when it arrives at your location?
+The client-side encryption key file you added to your AWS Snowcone job
+Two-factor authentication using user name, password, and an additional login stored on the AWS Snowcone device
+The server-side encryption key file you added to your AWS Snowcone job
+The unlock code and manifest file for that specific AWS Snowcone job
+The unlock code and manifest file for that specific AWS Snowcone job are required. Access the AWS account used to create your AWS Snowcone job and download these files. These files are never stored on the AWS Snowcone device.
+
+Approximately, how much does an AWS Snowcone device weigh?
+7.5 lbs (3.4 kg)
+2.5 lbs (1.3 kg)
+9.5 lbs (4.3 kg)
+4.5 lbs (2.1 kg)
+
+Which AWS Snowcone feature ensures that the device is shipped back to the correct AWS location?
+AWS Snow Family console configuration selection
+Printable return shipping label
+AWS OpsHub configuration selection
+E Ink return shipping label
+The touch screen panel changes automatically to an E Ink shipping display when you power off your AWS Snowcone device. The E Ink label automatically includes the correct AWS return address and shipping carrier information.
+
+
+
+What is the amount of compute resources consumed when running the Network File System (NFS) client in AWS OpsHub?
+2 vCPU and 4 GB of memory
+1 vCPU and 1 GB of memory
+No usable compute resources
+1 vCPU and 2 GB of memory
+
+What is required for network connectivity to a launched Amazon Elastic Compute Cloud (Amazon EC2) instance?
+The IP address for the physical network port and an assigned unique subnet
+The IP address for the physical network port only
+The Uniform Resource Locator (URL) address
+An assigned IP address for the virtual network interface (NIC)
+You assign a  virtual NIC to the Amazon EC2 instance. The virtual NIC provides the public IP address used to connect to the instance.
+
+Which items are required to initially unlock an AWS Snowcone device using AWS OpsHub? (Select THREE.)
+AWS Management Console account sign in credentials
+IP address for connected RJ45 port
+Device unlock code
+Secure Shell (SSH) PEM or PPK key
+Device secret key
+Device manifest file
+To unlock your Snowcone device, you must get the device unlock code, download the device manifest file, and know the IP address for an RJ45 port that is connected to your local network. 
+
+What is a "profile" for AWS OpsHub?
+An automation configuration script for the initial setup of the AWS Snowcone device.
+An individualized persistent storage of your AWS Snowcone credentials on your local system.
+An Amazon Elastic Compute Cloud (Amazon EC2) launch configuration file.
+An automation script for creating Amazon Elastic Compute Cloud (Amazon EC2) instances from Amazon Machine Images (AMI).
+A profile enables persistent storage of your AWS Snowcone credentials on your local file system. Using profiles removes the need to provide access to the unlock code and manifest file for every user.
+
+Which AWS DataSync process functions or roles can an AWS Snowcone assume?
+An AWS DataSync agent workstation and destination location
+An AWS DataSync agent workstation and source location
+An AWS DataSync agent workstation, source location, and destination location
+A source location and destination location
+You can use your AWS Snowcone as a client workstation to run the AWS DataSync agent. Use it as a source location or destination location as part of an AWS DataSync task.
+
+
+
+
+
+
+
+
+Which shipping rule for Snowball Edge devices applies to the United Sates?
+AWS ships Snowball Edge devices to any specific state only from that state's designated AWS Region.
+AWS ships Snowball Edge devices from any AWS Region in the US to any location in the US.
+AWS ships Snowball Edge devices to Mexico, the Bahamas, and Panama only from the US.
+AWS ships Snowball Edge devices only from the US East AWS Regions to locations East of the Mississippi River, and from US West AWS Regions to locations West of the Mississippi River.
+
+Which shipping rules for Snowball Edge devices apply to Europe?
+Snowball Edge devices may only be shipped between AWS Regions. 
+Snowball Edge devices may be shipped only to Switzerland and Bosnia from the Europe (Frankfurt) AWS Region.
+Snowball Edge may be shipped from any AWS Region to any other location in a supported European country that does not have an AWS Region. For countries with an AWS Region, the device must be shipped from that Region.
+Snowball Edge devices may be shipped from any Europe AWS Region to any supported European country.
+You can ship Snowball Edge devices from any European AWS Region to any other supported  European countries. Neither Switzerland nor Bosnia are supported European Union countries for shipping Snowball Edge devices.
+
+Which shipping rule for Snowball Edge devices is specific to the Asia Pacific, Canada, Africa, and South America AWS Regions?
+The customer may transport or move the Snowball Edge device to another country.
+AWS ships Snowball Edge devices only to locations within the country hosting the AWS Region.
+AWS ships Snowball Edge devices to designated neighboring countries.
+AWS ships Snowball Edge devices between any AWS Regions.
+
+Which step must you complete before starting to configure your Snowball Edge job?
+Set up permissions on the Amazon S3 bucket.
+Set up a shipping address in the AWS Management Console.
+Determine your networking IP addresses for the Snowball Edge device.
+Configure any Amazon EC2 Amazon Machine Images (AMIs) and AWS Lambda functions required for the job.
+
+Which AWS Storage services are supported as backend storage for AWS Transfer Family? (Select TWO.)
+Amazon Elastic Block Store (Amazon EBS)
+Amazon Simple Storage Service (Amazon S3)
+Amazon FSx for Windows File Server
+Amazon Elastic File System (Amazon EFS)
+AWS Storage Gateway
+
+Which common use cases use Applicability Statement 2 (AS2) protocol? (Select THREE.)
+Supply chain logistics
+Internal organization transfers
+Integration with enterprise resource planning (ERP) and customer relationship management (CRM) systems
+Client-initiated file transfers
+Payments workflows
+Secure file downloads from a shared repository
+AS2 protocol is used for business-to-business and trading partner transfers. Supply chain logistics, integration with ERP and CRM systems, and payments workflows are common use cases for AS2 protocol.
+
+Which common use cases use Amazon Simple Storage Service (Amazon S3) as a backend storage service? (Select TWO.)
+Content management systems 
+Data lakes for uploads from third parties
+Subscription-based data distribution with your customers
+A supply chain file storage with ERP and CRM system integration
+Web-serving applications with frequent updates
+
+Data lakes, subscription-based data distribution, and file transfers internal to your organization are common use cases for Amazon S3 as the backend storage system.
+
+Which outbound protocol is supported using the AWS Transfer Family?
+Applicability Statement 2 (AS2)
+File Transfer Protocol over SSL/TLS (FTPS)
+File Transfer Protocol (FTP)
+Secure File Transfer Protocol (SFTP)
+Applicability Statement 2 (AS2) is the only supported outbound protocol as of September 2022.  
+
+What determines monthly AWS DataSync pricing?
+The total number of gigabytes transferred
+The number of agents deployed and the total number of gigabytes transferred
+The number of tasks that ran and the number of gigabytes transferred
+The total of outbound data transferred and the total number of file copy requests performed
+Pricing for DataSync is based on a flat rate for the number of gigabytes transferred per month. Additional AWS services charges can apply based on the AWS services used.

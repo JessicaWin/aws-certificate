@@ -1,0 +1,17 @@
+You are looking to downsize an instance. Which tool helps you identify only under-utilized EC2 instances?
+AWS Compute Optimizer
+AWS Cost and Usage Reports
+AWS Cost Explorer
+AWS Budgets
+Correct
+AWS Cost Explorer helps you identify under-utilized EC2 instances that can be downsized. This tool only shows downsizing information of your current instance to another instance in that same instance family. It also gives you detailed information on the potential impact to your costs by taking into account any of your Reserved Instances and instances in a Savings Plan.
+
+Your instances are part of an Auto Scaling group. You need to identify opportunites to downsize and upsize these instances. Which tool helps you identify both downsizing and upsizing Amazon EC2 instances?
+Amazon CloudWatch
+AWS Compute Optimizer
+AWS Trusted Advisor
+AWS Cost Explorer
+Incorrect
+AWS Compute Optimizer provides downsizing and upsizing recommendations, and recommendations for instances that are part of an Auto Scaling group. This tool provides recommendations regardless of instance family. For downsizing, the recommendations given are for instance within or across instance families. For upsizing, the recommendations are to help remove performance bottlenecks.
+
+

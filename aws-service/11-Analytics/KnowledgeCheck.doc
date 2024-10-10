@@ -1,0 +1,139 @@
+Which of the following services can be used for purpose-built analytics and insights? (Select THREE.)
+Amazon Athena
+Amazon Elastic Kubernetes Service (Amazon EKS)
+Amazon Kuiper
+Amazon Managed Blockchain (AMB)
+Amazon Prime
+Amazon QuickSight
+Amazon SageMaker
+
+Amazon Athena, Amazon QuickSight, and Amazon SageMaker can be used for purpose-built analytics and insights.
+Amazon SageMaker is a fully managed machine learning (ML) service that provides features to build, train and deploy ML models.
+Amazon Athena is provides interactive querying, analyzing, and processing petabytes of data where it resides. Athena makes it easier to analyze data directly in S3 using standard SQL.
+Amazon QuickSight is business analytics service that makes it easy to build visualizations, perform targeted analysis, and provide business intelligence any time on any device.
+Amazon AMB, Amazon EKS, Amazon Kuiper, and Amazon Prime can not be used for purpose-built analytics and insights.
+Amazon AMB is a fully managed service to help you build resilient Web3 applications on both public and private blockchains.
+Amazon EKS is a managed Kubernetes service to run Kubernetes in the AWS cloud and on-premises data centers.
+Amazon Kuiper is not an AWS service. Project Kuiper is Amazon's low Earth orbit (LEO) satellite broadband network.
+Amazon Prime is a paid subscription service of Amazon which is available in various countries and gives users access to additional services otherwise unavailable or available at a premium to other Amazon customers.
+
+Which services can a data analyst use to analyze the data in a data lake? (Select TWO.)
+AWS DataSync
+Amazon AppFlow
+AWS Glue
+Amazon Redshift
+Amazon SageMaker Ground Truth
+AWS Glue can be used as an extract-transform-load (ETL) service with a data lake. Amazon Redshift is used as a data warehouse that can integrate with your data lake on Amazon S3, extending your analytics capabilities to petabytes of data.
+
+What are the key challenges in building a data lake? (Select THREE.)
+Data governance
+Machine learning model selection
+Game servers
+Data quality
+Security
+Hypervisor
+Data governance: Managing and governing huge volumes of disparate data from multiple sources is difficult. Establishing policies, access controls, data lineage tracking, and metadata management is critical but challenging.
+
+Data quality: Ingesting raw data from multiple sources leads to issues with data quality, inconsistencies, duplications, and integrity. Performing extract-transform-load (ETL) and cleaning for huge data volumes is hard.
+Security: Securing a data lake with large amounts of heterogeneous data is challenging. Implementing access controls, encryption, masking, and auditing at scale needs thoughtful planning.
+Thus, data governance, data quality, and security are the main challenges in building a data lake.
+
+Which services solve the governance challenges for a data lake on AWS? (Select TWO.)
+Amazon DataZone
+AWS CloudTrail
+AWS Lambda
+AWS Lake Formation
+Amazon Kinesis
+The following services help to govern a data lake on AWS:
+Amazon DataZone is a service that helps organizations manage, govern, and share data assets across AWS, on-premises sources, and third-party sources.
+AWS Lake Formation is a managed service that simplifies building, securing, and managing data lakes.
+
+How does Amazon Redshift use machine learning (ML) to improve performance? (Select THREE.)
+Automate the management of tables
+Physical data distribution
+Schema design of the storage layer
+Automatic hyper-parameter selection for the ML model
+IoT certificate updates
+On-premises data optimization
+Amazon Redshift self-regulates its data warehouse performance using ML. Amazon Redshift optimizes and automates administrative tasks like distributing physical data, designing the storage layer schema, and maintaining tables.
+
+What are the goals of a data mesh architecture pattern? (Select THREE.)
+Data as a product
+Code as a product
+Messaging queues
+Central data governance
+Common access
+Serverless runtime
+
+Which analytics service is best used for log analytics?
+Amazon OpenSearch Service
+AWS Lambda
+Amazon Redshift
+Amazon DataZone
+Amazon OpenSearch Service is a fully managed service to deploy, operate, and scale OpenSearch, a popular open source search and analytics engine. It offers real-time analytics capabilities to deliver dashboards for log analytics.
+
+2. Which are benefits of using Amazon OpenSearch Service? (Select TWO.)
+Search semi-structured and unstructured data.
+Automatically archive data to Amazon S3 Glacier.
+Create Apache Spark ETL jobs.
+Detect anomalies.
+Automatically deploy web applications.
+seven benefit:
+Highly scalable and available
+Semi-structured and unstructured data search
+Trace Analytics
+Diagnosis of infrastructure issues
+Anomaly detection
+Cost-effective
+Advanced security
+
+Which use cases are examples for Amazon OpenSearch Service? (Select TWO.)
+Application monitoring
+Real-time streaming
+Cache mechanism
+Relational database
+Search capability for a product catalog
+Correct. OpenSearch Service can provide application monitoring and perform a search for a product catalog.
+
+A developer needs to analyze data and gather estimates from various collections of information, what actions can the developer perform with Amazon QuickSight? (Select THREE.)
+Ask natural language questions of your data.
+Make it possible for authors and readers to change account permissions or invite more users.
+Quickly create visualization, dashboards, and reports.
+Perform real-time data collection.
+Perform forecasting on data.
+Create static documents and data analytics.
+
+Jake needs to review a collection of data, which of the following options are benefits that he can find using Amazon QuickSight? (Select THREE.) 
+Connect to multiple data sources.
+Create a data lake.
+Scale seamlessly across your organization.
+Use machine learning (ML) within dashboards.
+Create a predictive model using code.
+Create a data warehouse.
+
+John is seeking a service to help him analyze his businesses data. What are some examples of how he might use QuickSight? (Select THREE.)
+To provide dashboards that are embedded in an existing application to customers.
+To help data scientists to build machine learning (ML) models with code.
+To provide a 360-degree view of customer data to understand marketing campaign performance.
+To embed analytics with QuickSight, you can copy the embed code using JSON files.
+To help users create self-serve insights with intuitive dashboards and provide developers with an intuitive user experience, so they can quickly develop additional dashboards and insights. 
+To collect sensor data in real time.
+
+
+
+
+Which problems does AWS Glue solve? (Select TWO.)
+Deploy and manage applications using the AWS Cloud without having to manage an infrastructure.
+Identify and detect sensitive data using machine learning (ML) recognition patterns for personally identifiable information (PII).
+Transform and move large amounts of data into and out of AWS data stores and databases.
+Reduce development time by providing developers with no-code, low-code, and interactive tools.
+Analyze metrics, logs, and traces without having to build or deploy any hardware.
+
+AWS Glue uses ML recognition patterns to identify and detect sensitive data and reduces development time by providing tools for each persona for performing development activities. These include no-code, low-code, and interactive tools. 
+
+Which of the following are benefits of using AWS Glue? (Select TWO.)
+Deliver data for analytics, machine learning (ML), and application development quickly.
+Deploy a cost-effective and scalable data warehouse.
+Create, run, and monitor extract, transform, and load (ETL) tasks without coding.
+Monitor containers on premises and in the cloud.
+Build custom real-time applications.

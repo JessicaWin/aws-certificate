@@ -1,0 +1,13 @@
+Which of these are recommendations for managing serverless applications? Select all that apply.
+Use a serverless application framework.  
+Switch your development tool chain to use source control and IDE tools developed specifically for serverless applications.
+Use a SAM template  to deploy your serverless applications rather than creating a template in AWS CloudFormation.
+
+You don't need to switch your familiar developer toolchain to go serverless, but you should use a serverless application framework to simplify the deployment process. The AWS serverless framework, SAM  uses SAM templates which are streamlined versions of an Amazon CloudFormation template.
+Which of these are recommendations for organizing your code repository for serverless applications? Select all that apply.
+Put each function into its own repository.
+Store all of your Lambda functions into a repository that is used only for Lambda functions.
+Organize your functions into services, and give each service one deployment template and one code repository
+
+ Although you may have multiple functions per service, a good organizational rule of thumb is to have one template per service and one code repository per template.
+

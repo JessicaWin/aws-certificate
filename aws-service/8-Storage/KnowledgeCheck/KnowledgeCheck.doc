@@ -1,0 +1,267 @@
+Which tools check if your Amazon S3 buckets allow public read access? (Select THREE)
+Amazon CloudWatch
+AWS Config
+AWS CloudTrail
+AWS IAM Access Analyzer
+AWS Trusted Advisor
+Server access logs
+AWS Config has a managed rule s3-bucket-public-read-prohibited that checks whether your S3 buckets allow public read access.
+AWS IAM Access Analyzer checks your bucket policy, bucket ACL, and access point policy for public access.
+AWS Trusted Advisor has an Amazon S3 Bucket Permissions check for public access permissions for your S3 buckets.
+Which tool checks that your logging is enabled for Amazon S3 buckets? (Select TWO)
+Amazon CloudWatch
+AWS Config
+AWS CloudTrail
+AWS IAM Access Analyzer
+Correctly unchecked
+AWS Trusted Advisor
+Correctly checked
+Server access logs
+AWS Config has a managed rule s3-bucket-logging-enabled that checks whether your Amazon S3 buckets have logging enabled.
+AWS Trusted Advisor's Amazon S3 Bucket Logging checks the logging configuration of your Amazon S3 bucket.
+Which AWS Outposts implementation is required to add Amazon S3 storage services on Outposts?
+AWS Local Zones
+Outposts servers
+Outposts racks
+AWS Wavelength
+Amazon S3 for Outposts is only available with Outposts racks. No Amazon S3 configuration option is available with Outposts servers at this time.
+Which AWS storage service is available on AWS Outposts servers?
+Amazon FSx for Windows File Server
+Amazon Elastic File System (Amazon EFS)
+Amazon S3
+Amazon Elastic Block Store (Amazon EBS)
+
+Amazon EBS is available on Outposts server configurations.
+Which type of on-premises file systems can be cached in the AWS Cloud using Amazon File cache?
+Network File System (NFS)
+Server Message Block (SMB)
+General Parallel File System (GPFS)
+Samba file systems
+Amazon File Cache can cache on-premises NFS file system data for temporary use in the AWS Cloud.
+Which client must be installed to use Amazon File Cache on Amazon EC2 instances. 
+Internet Small Computer Systems Interface  (iSCSI) client
+Server Message Block (SMB) client
+Network File System (NFS) client
+Lustre client
+The Lustre client must be installed on EC2 instances to use Amazon File Cache.
+Which platform option offers offline cloud capabilities to deploy Tape Gateway?
+VMware ESXi
+Hardware Appliance
+AWS Snowball Edge
+Amazon EC2
+
+Deploy Tape Gateway using AWS Snowball Edge for offline cloud capabilities when bandwidth is an issue in your on-premises environment.
+Which components are required to successfully configure an Amazon FSx File Gateway deployment?
+An on-premises gateway appliance, one Amazon FSx for Windows File Server in AWS, Microsoft Active Directory, and a reachable domain
+An on-premises gateway appliance and a reachable domain
+An FSx for Windows File Server and Microsoft Active Directory
+Microsoft Active Directory and a reachable domain
+Which FSx for Windows File Server deployment type takes advantage of cost-optimized hard disk drive (HDD) storage and offers cost optimization for your Amazon FSx File Gateway deployment?
+Multi-AZ
+Singe-AZ 2
+Single-AZ 1
+Local zone
+
+Single-AZ 2 is the latest Single-AZ for the FSx for Windows deployment type and can take advantage of cost-optimized HDD storage.
+Which of the following are common use cases for Amazon Elastic File System (Amazon EFS)? (Select THREE.)
+Long-term logs and metrics storage
+Container storage
+Media applications
+Big data analytics
+
+Common use cases for Amazon EFS include big data analytics, container storage, and media and entertainment. Long-term logs and metrics storage are better for Amazon EBS.
+Which tool is used to manage shadow copies on your file system?
+Amazon FSx CLI for remote management on PowerShell 
+AWS Management Console
+AWS CLI
+AWS Software Development Kits (SDKs)
+What are the common use cases for Amazon FSx for Windows File Server? (Select THREE.)
+Home directories 
+Machine learning
+High performance computing (HPC)
+Microsoft SQL Server Failover Clusters
+Media and entertainment
+Electronic Design Automation (EDA)
+Which vertical use cases benefit from using the Amazon FSx for Lustre high-performance file system? (Select THREE.) 
+Genomics and life sciences
+SAS Grid Computing
+Windows-based machine learning
+Autonomous vehicle systems
+Governmental compliance data retention
+User file shares
+FSx for Lustre provides high-performance file access for Linux-based workloads. Vertical use cases for machine learning, artificial intelligence, and high-performance computing are candidates for FSx for Lustre. SAS Grid Computing, genomics and life sciences, and autonomous vehicle systems are examples of vertical areas that benefit from high-performance computing.
+What are the advantages of using an Amazon Simple Storage Service (Amazon S3) bucket as a data repository for your Amazon FSx for Lustre file system? (Select Three.)
+Workload processing can begin before copying all of your data set into your FSx for Lustre file system.(lazy load)
+Using linked Amazon S3 data repositories lowers your latency when using your FSx for Lustre file system.
+Workloads using Spot Instances can resume processing after being stopped using a saved durable storage data set.
+Using Amazon S3 reduces your per gigabyte month costs when using an FSx for Lustre persistent file system.
+Amazon S3 provides durable storage for results data.
+Your data can be backed up incrementally using the FSx for Lustre backup option.(s3 repository not support backup)
+Using an Amazon S3 bucket does not reduce the direct costs of using FSx for Lustre. Once loaded into FSx for Lustre, the imported data set can be updated with changed and new data. Only persistent file systems that are not linked to an Amazon S3 bucket can be backed up using the FSx for Lustre backup option and backup is not applicable for a file system linked to Amazon S3. Using Amazon S3 does not reduce latency for the FSx for Lustre file system access; it does improve the initial load time using lazy loads and enables workload processing to begin sooner with large data sets. It also enables you to store your intermediate data set and results data to durable storage.
+Which NetApp ONTAP feature makes it particularly well suited for cloud bursting on-premises workloads to an Amazon FSx for NetApp ONTAP cloud-native application architecture?
+SnapVault
+NetApp Snapshots
+Global File Cache
+FlexCache
+FlexCache is the ONTAP remote caching capability that permits distributed data sources to be cached in the cloud. 
+What are NetApp Snapshots, by themselves, particularly well suited for?
+Providing writable full-data volume copies
+Providing a disaster recovery copy of your data volumes
+Protecting against accidental deletion or modification of files
+Providing copies of cached data to on-premises resources
+NetApp Snapshots are point-in-time read-only images of your volume data.
+Which of the following best describes a storage virtual machine (SVM) in an FSx for ONTAP deployment?
+The primary resource type in Amazon FSx, analogous to an on-premises cluster
+An isolated virtual ONTAP server
+A data container for files, directories, and LUNs
+A  firewall controlling inbound and outbound traffic to your file system
+
+A file system is the primary resource type in Amazon FSx, analogous to an on-premises cluster.  An SVM is an isolated virtual ONTAP server. An FSx for ONTAP volume is a data container for files, directories, and logical unit numbers (LUNs).
+Which factor determines the amount of cache available to your Amazon FSx for NetApp ONTAP file system?
+The amount of solid-state drive (SSD) capacity that you select
+The throughput level that you select
+The amount of input/output operations per second (IOPS) that you select
+The amount of latency that you select
+
+Correct!  Depending on the throughput level you select, your ONTAP servers can provide up to 128 GB of in-memory cache and 2,400 GB of NVME cache.
+Your Amazon FSx for NetApp ONTAP data is encrypted at rest and in transit by default. Is this statement true or false?
+True
+False
+
+FSx for ONTAP data at rest is encrypted by default.  In-transit encryption needs to be turned on on the SVM and supported by the connecting client.
+An Amazon FSx for NetApp ONTAP file system is provisioned with 2,048 GiB of solid-state drive (SSD) capacity. It needs to be capable of delivering at least 6,000 total input/output operations per second (IOPS). 
+How many user-provisioned IOPS should be specified?
+0
+1464
+2928
+6000
+That is correct. The system is provided with 3 IOPS  per GiB of SSD storage capacity provisioned. So this file system would already be capable of providing 6144 IOPS.
+Which Amazon FSx file system can FSx File Gateway serve as an on-premises cache for?
+Amazon FSx for ONTAP
+Amazon FSx for Windows File Server
+Amazon FSx for Lustre
+Amazon FSx for OpenZFS
+Which statement accurately describes an AWS DataSync agent?
+A virtual machine (VM) that is used to read or write data from storage systems
+A background operating system (OS) service that must be installed before you run an AWS DataSync job
+A set of options that you use to control an AWS DataSync job
+An AWS account role that an AWS DataSync job must assume
+An agent is a VM that you own that's used to read or write data from storage systems. The agent can be deployed on VMware ESXi, Linux Kernel-based Virtual Machine (KVM), Microsoft Hyper-V hypervisors, or it can be launched as an EC2 instance.
+Which Amazon FSx file system offers you the lowest possible latency for your workloads?
+Amazon FSx for Windows File Server
+Amazon FSx for OpenZFS
+Amazon FSx for NetApp ONTAP
+Amaxon FSx for Lustre
+Which of the Amazon FSx file systems offer the highest scale and performance capabilities?
+Amazon FSx for NetApp ONTAP
+Amazon FSx for Windows File Server
+Amazon FSx for Lustre
+Amazon FSx for OpenZFS
+Which FSx file system offers high performance computing (HPC) support with a scale-out architecture?
+Amazon FSx for NetApp ONTAP
+Amazon FSx for OpenZFS
+Amazon FSx for Windows File Server
+Amazon FSx for Lustre
+
+Amazon FSx for Lustre provides a scale-out architecture offering the highest performance support to your HPC applications.
+Which Amazon FSx file system provides an auto-tiering feature to move data from SSD storage to capacity pool storage based on your data access patterns?
+Amazon FSx for NetApp ONTAP
+Amazon FSx for OpenZFS
+Amazon FSx for Windows File Server
+Amazon FSx for Lustre
+Amazon FSx for NetApp ONTAP provides automatic tiering moving data from SSD storage to capacity pool storage based on your access patterns.
+Which Amazon FSx file system integrates with S3 so you can seamlessly access the objects stored in your Amazon S3 buckets from applications that mount your Amazon FSx file system?
+Amazon FSx for NetApp ONTAP
+Amazon FSx for OpenZFS
+Amazon FSx for Windows File Server
+Amazon FSx for Lustre
+
+Amazon FSx for Lustre directly integrates with Amazon S3 providing access to objects stored in your Amazon S3 buckets from applications that mount your Amazon FSx file system.
+
+Which Amazon Elastic File System (Amazon EFS) storage class would you choose to reduce storage costs without incurring any without additional costs when accessing a file?
+EFS Standard
+EFS Standard-IA
+EFS One Zone
+EFS One Zone-IA
+EFS One Zone provides reduced per-GB storage costs without additional storage access retrieval fees. Infrequent Access (IA) tiers have additional access or retrieval costs charged when you access files. 
+
+Which logical Amazon Elastic File System (Amazon EFS) service component provides the connection point for compute services to connect to your EFS file system?
+Gateway endpoint
+Mount target
+NAT gateway
+Data portal
+A single mount target per Availability Zone can be configured to mount the NFS file system in the AWS Region. As an easy reminder, file systems are mounted by using the Network File System (NFS) protocol.
+
+Which shared file storage protocols are supported when using Amazon FSx for NetApp ONTAP? (Select TWO.)
+Network File System (NFS)
+Server Message Block (SMB)
+Integrated File System (IFS) 
+NetWare Core Protocol (NCP) 
+Internet Small Computer Systems Interface (iSCSI)
+FSx for ONTAP supports multi-protocol access for shared file systems using the SMB and NFS protocols. iSCSI is used to access block storage volumes rather than shared file system storage.
+
+Which AWS configuration component connects compute clients to the Amazon FSx for NetApp ONTAP file system?
+NAT gateway
+Virtual private cloud (VPC) endpoint
+Elastic network interface
+Elastic load balancer
+Connections are made by clients using the elastic network interface for the FSx for ONTAP service.
+
+How many AWS managed Amazon FSx for NetApp ONTAP file systems are configured when you choose a Multi-AZ deployment?
+One
+Two
+Three
+Four
+In a Single-AZ and Multi-AZ configuration, two systems, an active and a standby, are created to provide high availability as part of the standard deployment in the AWS Cloud.
+
+Which Amazon FSx for NetApp ONTAP storage tier elastically expands and can scale to petabytes in size?
+Primary storage
+Intelligent Tiering storage class
+Capacity pool storage
+Standard storage class
+Capacity pool storage can elastically expand to petabytes in size. The Primary storage automatically tiers data to the capacity pool based on access patterns.
+
+Which NetApp feature permits you to quickly and efficiently replicate volumes from your on-premises NetApp ONTAP deployments to your Amazon FSx for NetApp ONTAP file system in the AWS Cloud?
+NetApp FlexClone
+NetApp Cloud Manager
+NetApp Snapshots
+NetApp SnapMirror
+NetApp SnapMirror is the replication tool that you can use to migrate on-premises NetApp storage to your Amazon FSx for NetApp ONTAP file systems. SnapMirror can be used for several replication scenarios.
+
+Which OpenZFS file system native feature creates a modifiable shared copy of the data?
+In-place data cloning
+Backup copy
+Thin provisioning
+Fast backup restore
+In-place cloning creates a virtual shared copy of the data without physically replicating the files in the data set. As files are changed in the copy, those files are no longer shared between the two copies. 
+
+What are the benefits to using Amazon FSx for OpenZFS when an OpenZFS file system has been used on premises? (Select THREE.)
+Stop managing storage
+Configure additional options
+Eliminate the need to rearchitect
+Lower operating costs compared to capital costs
+Create a more robust operating system
+Simplify migration to AWS
+Amazon FSx for OpenZFS is a managed service so the storage infrastructure, hardware, and software do not need to be managed. Because FSx for OpenZFS is the same operating system used on premises, there is no need to rearchitect the storage. This helps simplify migrating from OpenZFS on premises to FSx for OpenZFS in the AWS Cloud.
+
+Which Amazon FSx for Lustre architecture deployment provides minimal latency, high IOPS, and data redundancy for longer running high performance computing (HPC) compute jobs?
+Multiple Availability Zone scratch file system
+Single Availability Zone scratch file system
+Single Availability Zone persistent file system with solid state drives (SSDs)
+Single Availability Zone persistent file system with hard disk drives (HDDs)
+FSx for Lustre is only deployed in a Single-AZ. Scratch file systems are not the best solution for longer running HPC jobs. Persistent files systems duplicate the data. SSDs will provide higher IOPs than HDDs.
+
+Which traditional type of storage devices are Amazon Elastic Block Store (Amazon EBS) volumes most similar to?
+Network-attached storage (NAS) devices
+Attached disk drives on the same host
+Storage area network (SAN) devices
+Direct attached storage devices or disk drives
+Amazon EBS volumes are similar to direct attached storage devices or disk drives. EBS volumes can be located on host systems or servers other than the Amazon EC2 instance. Amazon EC2 instance stores are always located on the same host system as the EC2 instance.
+
+Which current-generation Amazon Elastic Block Store (Amazon EBS) volume type is designed to meet approximately 80 percent of the block storage workloads?
+io2
+gp3
+st1
+sc1
+General Purpose gp3 SSD volumes balance price and performance and are designed to meet the needs of about 80 percent of customer workloads.
+

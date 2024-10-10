@@ -1,0 +1,320 @@
+What can a standards-based approach to security help organizations do?
+Benefit from past experiences and knowledge in their organization's security history
+Benefit from the knowledge and experience of AWS
+Benefit from a predetermined framework used in most successful and secure businesses
+Benefit from the knowledge and experience of a wide range of industry best practices to secure their workloads
+A standards based approach can help and organization benefit from the knowledge and experience of a wide range of industry best practices to secure their workloads.
+
+Which of the following does the security pillar framework focus on?
+Protecting business operations, frameworks, and client information while delivering secure platforms
+Protecting security groups, the AWS Cloud, and data while delivering infrastructure protection
+Protecting information, systems, and assets while delivering business needs
+Protecting operating systems, networking components, and virtualizing layers
+Correct answer: Protecting information, systems, and assets while delivering business needs
+Your answer: Protecting business operations, frameworks, and client information while delivering secure platforms
+These items are customer responsibilities but not an overall focus of the security pillar.
+
+Which of the following criteria can be filtered based by AWS WAF (SELECT THREE)?
+An IP address origin of the request
+A Domain Name System (DNS) response message
+A malicious structured query language (SQL) code or scripting
+A string match or regular expression (regex) match in a part of the request
+Domain Name System (DNS) queries sent on UDP only
+AWS WAF can filter based on a Malicious structure query language (SQL) code or scripting, or a string match or regular expression (regex) match in a part of the request. 
+AWS WAF does not filter based on DNS traffic or servers.
+
+Which of the following are examples of AWS services or features that best enable availability for your resources (SELECT TWO)?
+Elastic Load Balancers (ELB)
+Traffic Mirroring
+Security Groups
+Network ACLs
+Regions and Availability Zones
+
+Which of the following provides always-on network flow monitoring to defend against distributed denial of service (DDoS) attacks to layers 3 and 4 by inspecting incoming traffic and using a combination of traffic signatures, anomaly algorithms, and other analysis techniques?
+The AWS WAF
+The AWS CloudWatch
+The AWS Shield Standard
+The AWS Marketplace
+
+
+
+
+Which of the following is true about security groups? 
+Security groups allow for "allow" and "deny" rules 
+When a rule is matched, the list stops processing and determines the actions for the matching traffic.
+Each subnet is required to be associated with only security group 
+A security group can be applied to one or more subnets. 
+Security groups are stateful
+Which is a good reason to use an Amazon Elastic Block Store (Amazon EBS) backed root volume for your EC2 instance?
+The boot time is slower.
+The root device is temporary.
+You only pay when the instance is running.
+Logs are persistent.
+Amazon instance store backed instances boot slower than EBS backed instances.
+
+True or False? Amazon Elastic Block Store (Amazon EBS) encryption by default is a Region-specific setting.
+True
+False
+Amazon Elastic Block Store (Amazon EBS) encryption by default is, in fact, a Region-specific setting. This statement is true.
+
+Which tasks does Amazon Inspector helps you perform? (Select TWO.)
+Prioritize patch remediation.
+Speed up deployment of databases 
+Run EC2 instances without the use of anti-virus software.
+Disabling unnecessary services
+Identify zero-day vulnerabilities sooner.
+(Correct) Amazon Inspector can scan configurations and identify resources that require patches.
+(Correct) Identify zero-day vulnerabilities sooner.
+(Incorrect) Amazon Inspector does not speed up deployment of any resources.
+(Incorrect) Amazon Inspector helps to find vulnerabilities but it is a passive tool and cannot remediate issues or protect your instance if it is infected with malware. It is always recommended that you use anti-virus software on your EC2 instances.
+(Incorrect) Amazon Inspector is a passive tool. It cannot remediate issues or disable services.
+
+AWS CloudTrail log file integrity validation is invaluable in security and forensic investigations.
+Which industry standard algorithm is used for validation hashing?
+MD5
+AES
+SHA-256
+DES
+AWS CloudTrail can do provide all of the following except: 
+Discover and troubleshoot security and operational issues by capturing a comprehensive history of changes that occurred in an AWS account
+Simplify compliance audits by automatically recording and storing activity logs for an AWS account
+Provide managed anomaly detection and automated response to alarms
+Increase visibility into user and resource activity
+AWS CloudTrails does not provide managed anomaly detection and automated response to alarms.
+Which statements are true about how AWS implements identity and access management? (Select THREE.)
+AWS Identity and Access Management (IAM) groups should reflect organizational roles, not technical commonality.
+Amazon Elastic Compute Cloud (Amazon EC2) key pairs are recommended for daily access to Amazon EC2 instances.
+With AWS Secrets Manager, you do not need to hardcode credentials in your code.
+AWS Security Token Service (STS) is used to provide permanent credentials to AWS Identity and Access Management (IAM) and federated users.
+User access keys are required when using the AWS Command Line Interface (AWS CL)I and AWS SDKs.
+The minimum password length must be set to five in the AWS Identity and Access Management (IAM) password policy for an account.
+AWS Security Token Service (STS) is used to provide temporary credentials
+Minimum password length of 8 characters and a maximum length of 128 characters
+Amazon Elastic Compute Cloud (Amazon EC2) key pairs are recommended for first access to Amazon EC2 instances.
+
+Which statements about detective controls are true? (Select TWO.)
+Amazon CloudWatch can be used to monitor resources and logs, and to send notifications.
+Amazon Simple Storage Service (Amazon S3) access logs give bucket owners insight into requests made by users.
+AWS CloudTrail can only track the creation and modification of AWS resources.
+Amazon CloudWatch Logs only record data from the us-east-1 Region.
+Amazon Virtual Private Cloud (Amazon VPC) Flow logs capture information about API calls.
+
+Which statements about infrastructure protection are true? (Choose THREE.)
+Amazon Elastic Compute Cloud (Amazon EC2) instances in a virtual private cloud (VPC) are isolated from other resources in other VPCs.
+AWS Systems Manager can be used to apply patches to operating systems at scale.
+Amazon Inspector produces security findings and automatically remediates issues.
+Network ACLs are a required layer of defense for Amazon Elastic Compute Cloud (Amazon EC2) instances.
+AWS CloudFormation ensures your compliance control are deployed consistently.
+AWS Direct Connect is used to establish a dedicated and secure a network connection between servers in the AWS Cloud.
+Amazon Inspector produces security findings, push event to event bridge, event bridge can trigger some action to remediate issues.
+Network ACLs are a required layer of defense for subnet.
+AWS Direct Connect is used to establish a dedicated and secure a network connection between servers in the AWS Cloud and on premises.
+
+Which statements about data protection are true? (Select THREE.)
+AWS Key Management Service (AWS KMS) allows users to create, manage, and control keys used in data encryption.
+Server-side encryption means data is encrypted before it is sent to AWS.
+Amazon Macie recognizes sensitive data, such as personally identifiable information (PII).
+Amazon Simple Storage Service (Amazon S3) Glacier should be used to securely archive frequently used data.
+AWS Certificate Manager can also be used to issue private certificates.
+Key management can be used only through AWS services that are integrated with AWS KMS.
+
+Which statements about distributed denial of service (DDoS) mitigation are true? (Select THREE.)
+As access to Amazon CloudFront data increases, the data is copied to an edge location.
+Customers are able to schedule AWS data center tours and private showings.
+Amazon Route 53 can be used with Amazon CloudFront for DDoS protection.
+AWS provides compliance certificates and security reports to its customers.
+Running workloads on AWS automatically makes them compliant.
+Customers are responsible for securing all the data they store in the AWS Cloud.
+
+Which statement provides an example of how AWS helps customers meet their security and compliance needs?
+With AWS, customers can automatically achieve compliance.
+AWS assists customers in integrating their existing control frameworks.
+AWS provides accreditations to customers.
+AWS audits and certifies a customer's environment.
+
+Which statement is true regarding the AWS Well-Architected Tool?
+It identifies next steps for improvements for a fixed monthly fee.
+It provides information on potential risks in a workload.
+It automatically remediates vulnerabilities in a workload.
+It allows users to annually review their workloads during a predefined time period.
+
+Which AWS services can be used in tandem to help protect against distributed denial of service (DDoS) attacks? (Select THREE.)
+AWS Shield
+Amazon Route 53
+AWS CloudFormation
+Amazon Macie
+Amazon CloudFront
+AWS Key Management Service (AWS KMS)
+
+Which statements correctly describe the AWS global infrastructure? (Select TWO.)
+All Regions have the same number of Availability Zones.
+Edge locations are linked to Availability Zones.
+Regions have geographically dispersed Availability Zones.
+Availability Zones consist of one or more data centers.
+An AWS Region consists of only one Availability Zone.
+
+Which AWS services or features can be used to provide data protection at rest and in transit? (Select THREE.)
+Multi-factor authentication (MFA)
+AWS Key Management Service (AWS KMS)
+Network ACLs
+Amazon Cognito
+Virtual private network (VPN) connectivity
+AWS Certificate Manager
+
+
+How can AWS CloudFormation be used in an incident response solution?
+Deploying pre-configured instances for forensics analysis
+Generating reports of findings for basic forensics
+Removing compromised instances from an Auto Scaling group
+Coordinating different services through a serverless workflow
+
+What are the major governance at scale focal points?
+Standards creation, environment compliance, and operational health
+Data protection and content placement
+Account management, security and compliance automation, and budget and cost management
+Procedure validation and event response
+
+What are the first three aspects of setting up governance at scale?
+Implement, provision, and operate
+Test, recover, and automate
+Observe, respond, and prevent
+Virtualize, experiment, and run
+
+Which of the following statements are true from a multi-account design pattern perspective? (Select TWO.)
+Activating multi-factor authentication (MFA) for all accounts created with Account Factory is a best practice.
+The only required accounts are root, management, log archive, and audit accounts.
+A multi-account design can simplify permissions management, facilitate isolation, and separate billing.
+A multi-account design should only be considered by organizations with more than five teams or departments.
+To optimize cost, you should share accounts for development, testing, and production workloads.
+What must you consider when working with guardrails? (Select TWO.)
+Mandatory and strongly recommended guardrails are enabled by default, but elective guardrails are not.
+Amazon Organizational Units (OUs) created through AWS Control Tower have mandatory guardrails applied to them automatically.
+Guardrail categories include default, mandatory, strongly recommended, and selective.
+Guardrails can be enabled at the individual account level.(???)
+Accounts created through Account Factory inherit their parent Organizational Units (OUs) guardrails.
+Only Mandatory guardrails are enabled by default.
+Three kinds of controls exist: preventive, detective, and proactive. Three categories of guidance apply to controls: mandatory, strongly recommended, or elective. 
+AWS Control Tower, which offers predefined baseline preventive and detective guardrails that can be enabled at an environment, resource, account, or Organizational Unit (OU) level.
+AWS Organizations provides service control policies (SCPs) to apply permission guardrails at the organization, organizational unit, or account level. 
+Which types of users does AWS Service Catalog support? 
+Catalog administrators and Identity and Access Management (IAM) roles 
+IT administrators, catalog auditors, and developers
+Catalog administrators and end users 
+AWS Control Tower administrators, local users, and third-party users
+Which service helps you to assess, audit, and evaluate their AWS resource configurations?
+AWS Security Hub 
+AWS CloudFormation
+AWS Config
+Amazon Machine Learning (Amazon ML)
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations.
+Which AWS service or tool can track service costs and usage in AWS Service Catalog? 
+AWS CloudTrail 
+AWS Cost and Usage Report
+AWS Cost Explorer 
+AWS Budgets
+You can use AWS Budgets to track your service costs and usage within AWS Service Catalog. You can associate budgets with AWS Service Catalog products and portfolios.
+AWS Budgets gives you the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount.
+Before using AWS Budgets, you need to activate cost allocation tags in the AWS Billing and Cost Management console.
+Which core account works as a repository for logs of API activities and resource configurations from all accounts in the landing zone? 
+Root account
+Main account
+Audit account 
+Log archive account
+Log archive account works as a repository for logs of API activities and resource configurations from all accounts in the landing zone.
+
+What are the fundamental roles of AWS Service Catalog in the governance at scale framework? (Select TWO.) 
+Service Catalog facilitates developers with the administrator role to access Amazon Web Services (AWS), and prevents them from exceeding the allocated resource budget.(end user)
+Service Catalog provides a structured service used for the management, deployment, and maintenance of services made available to IT administrators.(end user)
+Service Catalog provides a single location for customers to centrally manage catalogs of pre-approved resources, and groups them as products.
+Service Catalog helps organizations deploy and manage Amazon Web Services (AWS) infrastructure and applications with automation. This complies with the organization's security and operational policies, while enforcing standardization and staying within budget.
+Service Catalog implements AWS Control Tower to automate guardrail provisioning in a self-service fashion. 
+AWS Service Catalog provides a single location to centrally manage catalogs of preapproved resources, grouping them as products. It supports the governance at scale model in the cloud adoption journey, especially the provision step. It also provides developers with agility through self-service, so they can achieve faster time-to-market. 
+AWS Service Catalog plays a fundamental role in the governance-at-scale framework. It lets organizations deploy and manage the AWS infrastructure and applications that comply with the organization's security and operational policies. This is accomplished while enforcing standardization and staying in budget.
+With which service can you access and aggregate Domain Name System (DNS) logs?
+AWS CloudTrail
+Amazon CloudWatch
+AWS Security Hub 
+Amazon GuardDuty 
+
+Which AWS Control Tower component simplifies automated account provisioning and prevents account sprawl with preapproved baselines and configuration options?
+Account Factory
+Guardrails
+AWS Service Catalog 
+AWS Organizations
+An Account Factory is a configurable account template that helps to standardize the provisioning of new accounts with pre-approved account configurations. AWS Control Tower offers a built-in Account Factory that helps automate the account provisioning workflow in your organization. 
+Account Factory provides automated account vending through AWS Account vending machine, which provisions and automatically configures new accounts, and prevents account sprawl. Account sprawl is the uncontrolled proliferation of accounts, which presents significant security and management concerns. 
+
+Which AWS Control Tower component uses AWS Service Catalog for automated account provisioning?
+AWS CloudFormation
+Account Factory 
+AWS Security Hub
+AWS Control Tower dashboard 
+AWS Control Tower automatically sets up AWS Service Catalog as the underlying AWS service to enable provisioning of new accounts through an account factory. While AWS Control Tower provides central governance at an account level, AWS Service Catalog can further provide granular governance at a resource level. AWS Service Catalog also lets you provision infrastructure and application stacks that have been preapproved by IT for use inside your accounts.
+
+Which statements about guardrails are correct? (Select TWO.)
+Guardrails are implemented with AWS Config rules and AWS Lambda functions. 
+When developers create a new landing zone, all guardrails are turned on by default. 
+AWS Control Tower provides three categories of guidance: mandatory, strongly recommended, and elective guardrails. 
+By default, detective guardrails are automatically turned on when a policy violation is detected by AWS Config.
+Guardrails let developers to express policy intentions and are categorized according to their behavior and guidance.
+Three kinds of controls exist: preventive, detective, and proactive.
+Preventive controls are implemented with SCPs. Detective controls are implemented with AWS Config rules. Proactive controls are implemented with AWS CloudFormation hooks. 
+Three categories of guidance apply to the two kinds of guardrails: mandatory, strongly recommended, or elective.
+Only Mandatory guardrails are enabled by default.
+
+
+
+
+
+A typical enterprise has different layers and departments, with different roles and requirements. With which Amazon Web Services (AWS) service can an enterprise map its hierarchy to a structure so the governance at scale framework can be implemented?
+AWS Control Tower 
+AWS Service Catalog 
+AWS Organizations
+AWS Identity and Access Management (IAM)
+A new security patch was released for the operating system a customer uses in more than 100 instances in one of their fleets. Which service simplifies the update process of those 100+ instances? 
+AWS Service Catalog 
+AWS Lambda
+AWS Systems Manager
+AWS Security Hub
+What is an AWS Service Catalog portfolio?
+A collection of rules that provides ongoing governance for an Amazon Web Services solution
+A description of Amazon Web Services resources required for the product, the relationships between resources, and the product's parameters
+A collection of products with configuration information that helps manage who can use specific products and how they can use them
+An IT service that is made available for deployment on Amazon Web Services, such as Amazon EC2 instances and storage volumes
+A portfolio is a collection of products that contains configuration information. Portfolios help manage who can use specific products and how they can use them.
+
+AWS Service Catalog can be integrated with third-party IT service management tools. Which AWS connectors are available for third-party systems or tools?
+ServiceNext and Jira Service Desk 
+ServiceNow and Jira Service Desk
+ServiceNow and Jira Software
+ServiceNow and Jira Core 
+AWS offers different ways to manage integration with ITSM tools, such as the AWS Service Catalog API. The API allows communication with AWS Service Catalog from almost any third-party ITSM tool with integration capabilities. 
+Additionally, AWS has two connectors that simplify and streamline the integration process for deploying Service Now and Jira Service Desk ITSM solutions. 
+
+Which default organizational units does AWS Control Tower create in AWS Organizations when the landing zone is first established? 
+Core and Root 
+Core and Custom
+Core, Log, and Audit
+Core, Infrastructure_Prod, and Sandbox 
+
+What are the major governance at scale focal points?
+Standards creation, environment compliance, and operational health
+Data protection and content placement
+Account management, security and compliance automation, and budget and cost management
+Procedure validation and event response
+Governance at scale provides answers to these questions by focusing on three major areas: account management, security and compliance automation, and budget and cost management. 
+What are the first three aspects of setting up governance at scale?
+Implement, provision, and operate
+Test, recover, and automate
+Observe, respond, and prevent
+Virtualize, experiment, and run
+
+Which aspects of governance at scale streamline account management across multiple Amazon Web Services (AWS) accounts? 
+Policy automation, identity federation, and account automation 
+Policy automation, identity syndication, and budget automation
+Implement, provision, and operate account creation
+Account creation workflows, security automation, and budget enforcement
+
+Governance at scale processes streamline account management across multiple AWS accounts and workloads in your company through centralization, standardization, and automation of account maintenance. This is done through policy automation, identity federation, and account automation.
+Governance at scale security and compliance practices consist of three main goals: identity and access automation, security automation, and policy enforcement.
+Budget planning and enforcement practices help leaders and staff allocate and manage budgets for multiple AWS accounts and define enforcement actions. With governance at scale, leaders can make proactive and well-informed decisions when it comes to budget control and allocation across their organization. This framework focuses on two items: budget planning and budget enforcement.

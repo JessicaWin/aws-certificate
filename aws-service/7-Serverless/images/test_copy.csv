@@ -1,0 +1,5 @@
+﻿,BuyerCode,InvoiceNumber,CurrencyCode,startdate,BillingAmount,number2,test
+#,Biz Partner Code,Invoice Number,Currency Code,startdateeeeee,Amount,number,sans10
+#,Required,Required,,,,,
+#,Text,Text,Text,Date,Number,Number,Text
+#,Only accept existing value,,"Only accept ""JPY"", ""USD"", ""CNY"", default value is ""JPY""",Format: YYYY/MM/DD,,,
