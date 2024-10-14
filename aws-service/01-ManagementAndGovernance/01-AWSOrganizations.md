@@ -7,13 +7,13 @@
 ## **Organization**
 + An entity that you create to consolidate your AWS accounts so that you can administer them as a single unit.
 + An organization has **one management account along with zero or more member accounts**.
-+ You can organize the accounts in a **hierarchical, tree-like structure **with a root at the top and organizational units nested under the root**.
++ You can organize the accounts in a **hierarchical, tree-like structure with a root at the top and organizational units nested under the root**.
 + Each account can be **directly in the root**, or **placed in one of the OUs in the hierarchy**.
 ## **Root**
 + The **parent container** for all the accounts for your organization.
 + If you apply a policy to the root, it applies to all organizational units (OUs) and accounts in the organization.
 ## **Organizational unit**(OU) 
-+ A** container for accounts** within a root
++ A **container for accounts** within a root
 + When you attach a policy to one of the nodes in the hierarchy, it flows down and affects all the branches (OUs) and leaves (accounts) beneath it.
 + OUs are intended to group accounts that have common overarching security policies and operational needs
 + **An OU can have exactly one parent**, and currently **each account can be a member of exactly one OU**.
@@ -23,11 +23,11 @@
 ## **Account**
 + An account in Organizations is a standard AWS account that contains your AWS resources and the identities that can access those resources.
 + There are two types of accounts in an organization: a single account that is designated as the **management account**, and one or more **member accounts**.
-+ A delegated administrator account is a member account that can manage a service or administrative feature as permitted or assigned by the management account. 
++ **A delegated administrator account is a member account** that can manage a service or administrative feature as permitted or assigned by the management account. 
 ## Policy types
 + Authorization policies
     + Authorization policies help you to centrally manage the security of the AWS accounts in your organization.
-    + Service control policies (SCPs) offer central control over the maximum available permissions for all of the accounts in your organization.
+    + Service control policies (SCPs) offer central control over **the maximum available permissions** for all of the accounts in your organization.
 + Management policies
     + Management policies enable you to centrally configure and manage AWS services and their features.
     + **Artificial Intelligence (AI) services** opt-out policies enable you to control data collection for AWS AI services for all of your organization's accounts.
@@ -98,10 +98,10 @@
     + High bandwidth connections between accounts
     + **Hierarchal grouping of accounts**
     + Cost optimization console
-    + Centralized security findings from AWS security services
-    + **Integration and support for AWS Identity and Access Management (IAM)**
+    + **Centralized security findings from AWS security services**
+    + Integration and support for AWS Identity and Access Management (IAM)
 # Reference
 + [What is AWS Organizations? - AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
 + [Welcome to the AWS Account Management Reference Guide - AWS Account Management](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)
 + [AWS Organizations Getting Started](https://explore.skillbuilder.aws/learn/course/17698/aws-organizations-getting-started)
-
++ [Centrally detect and investigate security findings with AWS Organizations integrations](https://aws.amazon.com/blogs/mt/centrally-detect-and-investigate-security-findings-with-aws-organizations-integrations/)

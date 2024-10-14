@@ -1,30 +1,28 @@
 # Overview
-+ AWS Control Tower offers **a straightforward way to set up and govern an AWS multi-account environment**, following prescriptive best practices.
++ AWS Control Tower offers **a straightforward way to set up and govern an AWS multi-account environment**,  called a landing zone, following prescriptive best practices. It uses AWS Organizations to create your landing zone. 
 + AWS Control Tower orchestrates the capabilities of several other AWS services, including **AWS Organizations, AWS Service Catalog, and AWS Single Sign-on**, to **build a landing zone** in less than an hour. Resources are set up and managed on your behalf.
 + With AWS Control Tower, you can more easily **adhere to corporate standards, meet regulatory requirements, and follow best practices**.
 + You can adopt AWS Control Tower as your **primary way to provision accounts and infrastructure**. 
 + In short, AWS Control Tower offers the easiest way to set up and govern a secure, compliant, multi-account AWS environment based on best practices established by working with thousands of enterprises.
 + AWS Control Tower enables end users on your distributed teams to **provision new AWS accounts quickly, by means of configurable account templates in Account Factory**. 
-+ AWS Control Tower provides a straightforward way to set up and govern a secure, multi-account AWS environment, called a landing zone. It uses AWS Organizations to create your landing zone. 
-+ ![AWSControlTower](./images/AWS-Control-Tower.png)
+![AWSControlTower](./images/AWS-Control-Tower.png)
 # Features
 ## **Landing zone**
 + A landing zone is a **well-architected, multi-account environment** that's based on security and compliance best practices.
 + It is the **enterprise-wide container** that holds all of your organizational units (OUs), accounts, users, and other resources that you want to be subject to compliance regulation.
 + A landing zone can scale to fit the needs of an enterprise of any size.
-## **Guardrails**
-+ A guardrail is a high-level rule that provides **ongoing governance for your overall AWS environment**.
+## **Guardrails(also known as control)**
++ A control is a high-level rule that provides **ongoing governance for your overall AWS environment**.
 + It's expressed in plain language.
-+ Three kinds of controls exist: **preventive, detective, and proactive**.
++ Three kinds of control exist: **preventive, detective, and proactive**.
     + In AWS Control Tower preventive controls are implemented with **Service Control Policies (SCPs)**.
     + Detective controls are implemented with **AWS Config rules**.
     + Proactive controls are implemented with **AWS CloudFormation hooks**.
-+ Preventive guardrails **prevent actions from occurring**.
-+ Detective guardrails **detect specific events** when they occur and **log the action** in CloudTrail. 
++ Preventive controls **prevent actions from occurring**.
++ Detective controls **detect specific events** when they occur and **log the action** in CloudTrail. 
 + Proactive controls check whether resources are compliant with your company policies and objectives, before the resources are provisioned in your accounts. 
     + Proactive controls monitor resources that would be deployed in your accounts by means of AWS CloudFormation templates.
-+ Three categories of guidance apply to the two kinds of guardrails: **mandatory, strongly recommended, or elective**.
-+ A control (also known as a guardrail) is a high-level rule that provides ongoing governance for your overall AWS Control Tower environment. Each control enforces a single rule. Preventive controls are implemented with SCPs. Detective controls are implemented with AWS Config rules. Proactive controls are implemented with AWS CloudFormation hooks. 
++ Three categories of guidance apply to the two kinds of controls: **mandatory, strongly recommended, or elective**.
 ## **Account Factory**
 + Account Factory **automates the provisioning of new accounts** in your organization.
 + An Account Factory is a **configurable account template** that helps to **standardize the provisioning of new accounts with pre-approved account configurations**.
@@ -68,7 +66,7 @@
 + Infrastructure OU to contain your shared services and networking accounts
 + Workloads OU to contain your production workloads
 # Customizing account configuration with AWS Control Tower lifecycle events
-+ ![Customizing-Account-Configuration](./images/Customizing-Account-Configuration.png)
+![Customizing-Account-Configuration](./images/Customizing-Account-Configuration.png)
 + New AWS account provisioning triggers the AWS Control Tower CreateManagedAccount lifecycle event, which invokes the Network-Configurator Lambda function.
 + Network-Configurator Lambda function triggers three separate Lambda functions in the management account.
 + VPC-Remover Lambda function assumes an IAM role into the new account and deletes the default VPC. The default VPC is deleted only in the AWS Regions where AWS Control Tower is not yet available.
